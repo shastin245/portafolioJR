@@ -99,6 +99,12 @@ span {
     font-size: 5.6rem;
     font-weight: 700;
     line-height: 1.3;
+    transition: 1.2s;
+}
+
+.home-cont h1:hover{
+    text-shadow: 3px 2px 3px var(--main-color),
+    0 0 1em var(--main-color), 0 0 0.2em #000000;
 }
 
 .home-cont p {
@@ -214,4 +220,82 @@ span {
 .serv-box p{
     font-size: 1.6rem;
     margin: 1rem 0 3rem;
+}
+
+.portafolio{
+    background: var(--second-bg-color);
+}
+
+.portafolio h2{
+    margin-bottom: 4rem;
+}
+
+.port-cont{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.port-cont .port-box{
+    position: relative;
+    border-radius: 2rem;
+    box-shadow: 0 0 1rem var(--bg-color);
+    overflow: hidden;
+    display: flex;
+}
+
+.port-box img{
+    width: 100%;
+    transition: .5s ease;
+}
+
+.port-box img:hover{
+    transform: scale(1.1);
+
+}
+
+.port-box .port-layer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgb(0,0,1, .9), var(--main-color));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 4rem;
+    transform: translateY(100%);
+    transition: .5s ease;
+}
+
+.port-box:hover .port-layer{
+    transform: translateY(0);
+}
+
+.port-layer h4{
+    font-size: 3rem;
+}
+
+.port-layer p{
+    font-size: 1.6rem;
+    margin: .3rem 0 1rem;
+}
+
+.port-layer a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 5rem;
+    height: 5em;
+    background: var(--second-bg-color);
+    border-radius: 50%;
+}
+
+.port-layer a i{
+    font-size: 2rem;
+    color: var(--text-color);
 }
