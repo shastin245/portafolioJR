@@ -18,40 +18,205 @@
 
     <!-- Diseño para header -->
     <header class="header">
-        <a href="#" class="logo">Portafolio</a>
+        <a href="#home" class="logo"> jarvKodes</a>
 
         <i class='bx bx-menu' id="icono"></i>
 
         <nav class="navbar">
-            <a href="home" class="active">Inicio</a>
+            <a href="#home" class="active">Inicio</a>
             <a href="#about">Acerca de mí</a>
-            <a href="#serv">Servicios</a>
-            <a href="#portf">Mis proyectos</a>
-            <a href="#contact">Contáctame</a>
+            <a href="#servicios">Servicios</a>
+            <a href="#portafolio">Portafolio</a>
+            <a href="#contacto">Contáctame</a>
         </nav>
     </header>
 
     <!-- diseño de #home -->
     <section class="home" id="home">
         <div class="home-cont">
-            <h3>¡Hola! soy</h3>
+            <h3>¡Hola! Soy</h3>
             <h1>Justin Romero</h1>
-            <h3>Y soy un <span> Desarrollador Front-end</span></h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique quia 
+            <h3>y soy un <span class="txt-multi"></span></h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique quia
                 aspernatur quam hic nulla qui quae eius.</p>
-                <div class="media">
-                    <a href="#"><i class='bx bxl-linkedin' ></i></a>
-                    <a href="#"><i class='bx bxl-github'></i></a>
-                    <a href="#"><i class='bx bxl-youtube' ></i></a>
-                    <a href="#"><i class='bx bxl-facebook-square'></i></a>
-                    <a href="#"><i class='bx bxl-twitter'></i></a>
-                    <a href="#"><i class='bx bxl-instagram'></i></a>
-                </div>
+
+            <!-- Div que contendrá el menú de navegación -->
+            <div class="social-media">
+                <a href="#"><i class='bx bxl-linkedin'></i></a>
+                <a href="#"><i class='bx bxl-github'></i></a>
+                <a href="#"><i class='bx bxl-youtube'></i></a>
+                <a href="#"><i class='bx bxl-facebook-square'></i></a>
+                <a href="#"><i class='bx bxl-twitter'></i></a>
+                <a href="#"><i class='bx bxl-instagram'></i></a>
+
+                <!-- Botón de descarga de mi CV -->
+            </div>
+            <a href="#" class="btn">Descarga mi CV</a>
+        </div>
+
+        <!-- img para el área "Home" -->
+        <div class="home-img">
+            <img src="images/jarvKodes.png">
+    </section>
+
+    <!-- Diseño/img para el área "About" -->
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="images/jarvKodes2.png">
+        </div>
+
+        <div class="abt-cont">
+            <h2 class="hdng">Acerca <span>de mí</span></h2>
+            <h3>Front-end Developer</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Pariatur facilis, sit aperiam quis placeat ipsa iusto
+                quia molestiae, eligendi quod consequuntur tenetur ab
+                repellendus sunt quas odit labore, velit perspiciatis
+                nihil ut maiores sint laborum aliquam nostrum! Cumque,
+                quae! Sunt numquam sapiente aspernatur, eum dignissimos
+                assumenda!</p>
+            <a href="#" class="btn">Leer más</a>
+
         </div>
     </section>
 
-    <!-- Script utilizado para  -->
-    <script src="./js/script.js"></script>
+    <!-- Diseño/img para el área "Servicios" -->
+    <section class="servicios" id="servicios">
+        <h2 class="hdng">Mis <span>servicios</span></h2>
+
+        <div class="serv-cont">
+            <div class="serv-box">
+                <i class='bx bx-code-alt'></i>
+                <h3>Desarrollo Web</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Iure beatae voluptas rerum aliquid debitis explicabo,
+                    illum ullam delectus obcaecati nam.</p>
+                <a class="btn">Leer más</a>
+            </div>
+
+            <div class="serv-box">
+                <i class='bx bx-support'></i>
+                <h3>IT Support</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Iure beatae voluptas rerum aliquid debitis explicabo,
+                    illum ullam delectus obcaecati nam.</p>
+                <a class="btn">Leer más</a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Diseño/img para el área "Mis proyectos" -->
+    <section class="portafolio" id="portafolio">
+        <h2 class="hdng">Últimos <span>proyectos</span></h2>
+
+        <!-- API clima -->
+        <div class="port-cont">
+            <div class="port-box">
+                <img src="/images/api-clima.png" alt="">
+                <div class="port-layer">
+                    <h4>API | Monitoreo de clima</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Necessitatibus, omnis.</p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+            <!-- API Pelis -->
+            <div class="port-box">
+                <img src="/images/api-pelis.png" alt="">
+                <div class="port-layer">
+                    <h4>API | Películas y series</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Necessitatibus, omnis.</p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+            <!-- Clon de WhatsApp -->
+            <div class="port-box">
+                <img src="/images/api-wha.png" alt="">
+                <div class="port-layer">
+                    <h4>API | WhatsApp clone</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Necessitatibus, omnis.</p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+            <!-- Sitio web de la empresa Aluvicloset S.A de C.V. -->
+            <div class="port-box">
+                <img src="/images/aluvi.jpg" alt="">
+                <div class="port-layer">
+                    <h4>Sitio web de empresa</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Necessitatibus, omnis.</p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+            <!-- Clon de Instagram  -->
+            <div class="port-box">
+                <img src="/images/ig-api.jpg" alt="">
+                <div class="port-layer">
+                    <h4>API | Instagram Clone</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Necessitatibus, omnis.</p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+            <!-- Clon de Twitter  -->
+            <div class="port-box">
+                <img src="/images/tw-api.png" alt="">
+                <div class="port-layer">
+                    <h4>API | Twitter Clone</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Necessitatibus, omnis.</p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Diseño/img para el área "Contáctame" -->
+    <section class="contacto" id="contacto">
+        <h2 class="hdng">¿Tienes dudas? <span>¡Contáctame!</span></h2>
+
+        <form action="#">
+            <div class="info-box">
+                <input type="text" placeholder="Nombre completo">
+                <input type="email" placeholder="Correo electrónico">
+            </div>
+            <div class="info-box">
+                <input type="number" placeholder="Teléfono/Celular">
+                <input type="text" placeholder="Asunto">
+            </div>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Escribe tu mensaje"></textarea>
+            <input type="submit" value="Enviar mensaje" class="btn">
+        </form>
+    </section>
+
+    <!-- Diseño del footer -->
+    <footer class="footer">
+        <div class="f-txt">
+            <p>Copyright &copy; 2023 por jarvKodes | Todos los derechos reservados.</p>
+        </div>
+
+        <div class="icon-t">
+            <a href="#home"><i class='bx bxs-chevrons-up'></i></a>
+        </div>
+    </footer>
+
+    <!-- Scroll reaveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- typed js (animación de texto de h3 en home-cont)-->
+    <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
+
+    <!-- Script utilizado para navegación en navbar -->
+    <script src="js/script.js"></script>
+
 </body>
 
 </html>
